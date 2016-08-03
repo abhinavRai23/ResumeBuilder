@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset=utf-8>
+
+<title>Resume Timeline</title>
+<script type='text/javascript' src='js/jquery-2.1.1.js'></script>
+<script type='text/javascript' src='js/scroll.js'></script>
+
+<!-- style sheets-->
+<link rel="stylesheet" media="all" href="css/bootstrap.css" type="text/css">
+<link rel="stylesheet" media="all" href="css/custom.css" type="text/css">
+<link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+
+<style>
+  .item{color:#fff;}
+  
+  .icon-bar > * {
+    text-align: center;
+    font-size: 1rem;
+    width: 10%;
+	padding:10px 10px 10px 10px;
+    margin: 0 auto;
+    display: block;
+    float: left; }
+    .icon-bar > * i, .icon-bar > * img {
+      display: block;
+      margin: 0 auto; }
+    .icon-bar > * i {
+      font-size: 1.875rem;}
+    .icon-bar > * img {
+      width: 1.875rem;
+      height: 1.875rem; }  
+
+.title .glyphicon{
+font-size:medium;}	  
+	  
+.top-icons{
+position:fixed;
+top:15%;
+}
+
+h2{
+margin-top:0px;}
+#link1{color:#fff;}
+#link1:hover{color:#DD2626;
+}
+
+
+
+#header-bar {
+top:0px;
+height: 40px;
+width:100%;
+position:fixed;
+background-color: #000;
+border-bottom: 1px solid #191919;
+z-index: 100;
+line-height: 40px;
+margin-bottom: 1px;
+}
+
+</style>
+
+</head>
+<body><a id="up"></a>
+<!-- <div id="header-bar">
+<center><h2><a href="form.php" id="link1" title="Click here">MAKE YOUR OWN RESUME</a></h2></center>
+</div> -->
+
+
+<!-- Navigation -->
+<nav id="spy" class="spy hidden-sm hidden-xs">
+    <ul>
+        <li class=""><a href="#profile" class="smoothScroll">Profile</a></li>
+        <li class=""><a href="#work-experience" class="smoothScroll">Work experience</a></li>
+        <li class=""><a href="#education" class="smoothScroll">Education</a></li>
+        <li class=""><a href="#professional-skills" class="smoothScroll">Skills</a></li>
+        <li class=""><a href="#interests" class="smoothScroll">Interests</a></li>
+        <li class=""><a href="#contact" class="smoothScroll">Contact</a></li>
+    </ul>
+</nav>
+<!-- end Navigation -->
+    
+<!-- Header -->
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+                <img src="images/face.jpg" class="face" alt="">
+                <hr class="empty">
+                <p class="header-name">Abhinav Rai</p>
+                <p class="header-title">Web Developer</p>
+                <p class="header-subtitle"><b>Hello my name is Abhinav Rai</b> and I'm a Web Developer from Ghaziabad, India.</p>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end Header -->
+	
+<!-- Profile -->
+<section id="profile" class="profile activate">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title ">  
+					<span class="glyphicon">
+					   <span class="item" aria-label="torso"><i class="fi-torso"></i></span>
+					</span>   
+					<a id="Profile">Profile</a></li>
+                    <li>
+                        <span class="note">Full name</span>
+                        <p><strong>Abhinav Rai</strong></p>
+                    </li>
+                    <li>
+                        <span class="note">Born</span>
+                        <p><strong>22 feb 1996</strong></p>
+                        <p><strong>Muradabad, India</strong></p>
+                    </li>
+                    
+                    <li>
+                        <span class="note">Linked In Profile</span>
+                        <p><strong><a href="https://www.linkedin.com/in/abhinav-rai-696a95a0">https://www.linkedin.com/in/abhinav-rai-696a95a0</a></strong></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Profile -->
+
+<!-- Work experience -->
+<section id="work-experience" class="work-experience">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title">
+					<span class="glyphicon">
+					   <span class="item" aria-label="laptop"><i class="fi-laptop"></i></span>
+					</span> 
+					<a id="Work experience">Work experience</a></li>
+                    <li>
+                        <span class="note">Jan 2014 - Current</span>
+                        <p><strong>OSSR&DC</strong></p>
+                        <p><strong>Web Developer</strong> in Ghaziabad, India</p>
+                        <p class="description">OSSR&DC is group of college students. We done a lot of web development work togather like College Automation using MOODLE, TiFac-Core Management System and Uptu Model Question Paper Portal.</p>
+                    </li>
+                    <li>
+                        <span class="note">Jan 2016 - April 2016</span>
+                        <p><strong>Adroha</strong></p>
+                        <p><strong>Intern as Web Developer</strong> Work from Home</p>
+                        <p class="description">Have done Stripe payement gateway integration.</p>
+                    </li>
+                    <li>
+                        <span class="note">Oct 2015 - Dec 2015</span>
+                        <p><strong>TechPros</strong></p>
+                        <p><strong>Intern as Web Developer</strong> Work from Home</p>
+                        <p class="description">Created admin panel for there website.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Work experience -->
+    
+<!-- Education -->
+<section id="education" class="education">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title">
+					<span class="glyphicon">
+					   <span class="item" aria-label="book"><i class="fi-book"></i></span>
+					</span> 
+					<a name="Education">Education</a></li>
+                    <li>
+                        <span class="note">August 2013 - current</span>
+                        <p><strong>B.tech</strong></p>
+                        <p><strong>AKGEC</strong> in Ghaziabad, India</p>
+                    </li>
+                    <li>
+                        <span class="note">July 2010 - May 2012</span>
+                        <p><strong>Intermediate</strong></p>
+                        <p><strong>St. Meera's Inter College</strong> in Lucknow, India</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Education -->
+    
+<!-- Professional skills -->
+<section id="professional-skills" class="professional-skills">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title">
+					<span class="glyphicon">
+					   <span class="item" aria-label="graph-trend"><i class="fi-graph-trend"></i></span>
+					</span> 
+					<a name="Professional skills">Professional skills</a></li>
+                    <li>
+                        <p>Php/Sql<span class="annotation pull-right">75%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>JavaScript<span class="annotation pull-right">85%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>HTML/CSS<span class="annotation pull-right">95%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Bootstrap<span class="annotation pull-right">90%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>C<span class="annotation pull-right">80%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>i
+<!-- end Professional skills -->
+    
+<!-- Personal skills -->
+<section id="personal-skills" class="personal-skills">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title">
+					<span class="glyphicon">
+					   <span class="item" aria-label="graph-bar"><i class="fi-graph-bar"></i></span>
+					</span> 
+					<a>Personal skills</a></li>
+                    <li>
+                        <p>Creativity<span class="annotation pull-right">90%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-personal-skill-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Social Skills<span class="annotation pull-right">80%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-personal-skill-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Leadership<span class="annotation pull-right">60%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-personal-skill-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Personal skills -->
+    
+<!-- Interests -->
+<section id="interests" class="interests">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title">
+					<span class="glyphicon">
+					   <span class="item" aria-label="heart"><i class="fi-heart"></i></span>
+					</span> 
+					<a name="Interests">Interests</a></li>
+                    <li>
+                        <p><strong>Movies</strong></p>
+                        <p class="description">I like watching new movies. My fevorite genre is Romantic Comedy.</p>
+                    </li>
+                    <li>
+                        <p><strong>Tv Series</strong></p>
+                        <p class="description">I love Tv-series watching tv series and animes. Game of thrones, Death Note, Code Geass are my Fevorites.</p>
+                    </li>
+                    <li>
+                        <p><strong>Video Games</strong></p>
+                        <p class="description">I love playing Game. Games in which team effort needed. My fevorites are Dota2, Counter Strike, Clash of Clan, Age of Empires 3</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Interests -->
+        
+<!-- Contact -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title">
+					<span class="glyphicon">
+					   <span class="item" aria-label="mail"><i class="fi-mail"></i></span>
+					</span> 
+					<a name="Contacts">Contact</a></li>
+                    <li class="container">
+                        <span class="note">Address</span>
+                        <p><strong>Ghaziabad, India</strong></p>
+                        <span class="note">Mobile</span>
+                        <p><strong>8743960158</strong></p>
+                        <span class="note">Email</span>
+                        <p><strong>raiabhinavrai1994@gmail.com</strong></p>
+                        <hr class="empty"></li>
+						</ul>
+						<ul>
+
+                    <a href="#up"><li class="title up">
+					<span class="glyphicon">
+					   <span class="item" aria-label="arrow-up"><i class="fi-arrow-up"></i></span>
+					</span> 
+					UP</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Contact -->
+
+
+
+</body></html>
